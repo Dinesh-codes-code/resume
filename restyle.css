@@ -1,0 +1,183 @@
+body{
+	margin: 0px;
+	font-family: sans-serif;
+}
+/*cover background*/
+#cover{
+	height: 65vh;
+	opacity: 0.8;
+	background-image: url(cover.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+/*properties for all horizontal lists*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+/*making inline-block for all elements in list*/
+.horizontal-list li{
+	display: inline-block;
+	margin:  0px 8px 8px 0px;
+}
+/*changing properties of anchor tag inside list*/
+.horizontal-list li a{
+	text-decoration: none;
+	color: #825e0e;	
+}
+.nav-menu li a{
+	transition: color 0.5s, border-bottom 4s;
+}
+/*change appearance when cursor is hovered*/
+.nav-menu li a:hover{
+	color: #403433;
+	border-bottom: 1px solid #f4f1f4;
+}
+/*creating template for text align center*/
+.text-center{
+	text-align: center;
+}
+/*name container*/
+#name-container{
+	margin-top: 20vh;
+}
+/*name properties*/
+#my-name{
+	font-size: 3rem;
+	letter-spacing:  0.1rem;
+	color: #825e0e;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+/*for social icons*/
+.social-icons li a i{
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 100%;
+}
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 6px 4px white ;
+}
+/*making all section flex and alternate bg*/
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section:nth-child(2n){
+	background-color: #f3f0f5;
+}
+section:nth-child(2n + 1){
+	background-color: white;
+}
+/*about section*/
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+#my-photo{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -11vh;
+}
+#my-photo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 1.2em;
+    font-size: 1.1rem;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+/*heading for all section*/
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	margin: 10px auto;
+	font-weight: 400;
+}
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+
+}
+/*skills section*/
+.skills-display{
+	width: 70%;
+	/*height: 100px;
+	border: 2px solid black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.mb75px{
+	margin-bottom: 75px;
+}
+.skill-progress{
+	width: 7rem;
+	height: 1.4rem;
+	background-color: lightgrey;
+	border-radius: 0.8rem;
+	box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+	/*border: 2px solid black;*/
+	margin: 25px;
+    overflow: hidden;
+}
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: 1px 1px 5px 2px #989882;
+}
+
+
+.skill-name span{
+	color: white;
+	font-size: 0.8rem;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+/*Percentage classes*/
+.eighty-percent{
+	width: 80%;
+	height: inherit;
+}
+.ninety-percent{
+	width: 90%;
+	height: inherit;
+}
+.seventy-percent{
+	width: 70%;
+	height: inherit;
+}
+/*bg colors*/
+.mb-blue{
+	background-color: #2857a4;
+}
+.mb-red{
+	background-color: red;
+}
+.mb-green{
+	background-color: green;
+}
